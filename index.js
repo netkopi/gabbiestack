@@ -59,9 +59,9 @@ const projectsContainer = document.querySelector('.projects')
 const projectDisplayContainer = document.querySelector('.project-display > div')
 
 const projectsInfo = [
-  {img: "cocopow.png", bg: "#ddd"},
-  {img: "nomnom.png", bg: "#f5f5dc"},
-  {img: "sinetambayan.png", bg: "#333"},
+  {img: "cocopow.webp", bg: "#ddd"},
+  {img: "nomnom.webp", bg: "#f5f5dc"},
+  {img: "sinetambayan.webp", bg: "#333"},
 ]
 projectsInfo.forEach(project => {
   projectDisplayContainer.innerHTML += `
