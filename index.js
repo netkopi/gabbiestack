@@ -28,7 +28,7 @@ const about = document.querySelector('.about-section')
 const aboutImg = document.querySelector('.about-section img')
 const aboutMagneticButton = document.querySelector('.about-section .magnetic-button-container')
 gsap.fromTo(aboutImg, 
-  {y: -300}, 
+  {y: -100}, 
   {
     y: 100, 
     duration: 1, 
@@ -59,14 +59,15 @@ const projectsContainer = document.querySelector('.projects')
 const projectDisplayContainer = document.querySelector('.project-display > div')
 
 const projectsInfo = [
-  {img: "cocopow.webp", bg: "#ddd"},
-  {img: "nomnom.webp", bg: "#f5f5dc"},
-  {img: "sinetambayan.webp", bg: "#333"},
+  {img: "cocopow.webp", bg: "#ddd", name: "cocopow"},
+  {img: "nomnom.webp", bg: "#f5f5dc", name: "nomnom"},
+  {img: "sinetambayan.webp", bg: "#333", name: "SineTambayan"},
 ]
 projectsInfo.forEach(project => {
   projectDisplayContainer.innerHTML += `
     <div class="img-container" style="background-color: ${project.bg};">
         <img src="images/${project.img}" alt="">
+        <a href="https://netkopi.github.io/${project.name}" target="_blank" class="project-link">view</a>
     </div>
   `
 })

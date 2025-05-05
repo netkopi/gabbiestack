@@ -146,6 +146,7 @@ header .cta-link {
     justify-content: center;
     flex-wrap: wrap;
     gap: 80px;
+    overflow: hidden;
 }
 .about-section .content {
     width: max(260px, 100%);
@@ -285,6 +286,30 @@ header .cta-link {
     display: flex;
     flex-direction: column;
 }
+.project-display .project-link {
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(50, 205, 50, 0.677);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: visible;
+}
+
+
+
+
+
+
+
+
 
 footer {
     background-color: var(--primary);
