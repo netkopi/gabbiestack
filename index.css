@@ -213,6 +213,7 @@ header .cta-link {
     width: 100%;
     height: 512px;
     padding: 100px 20px;
+    display: flex;
 }
 .skill-section .container {
     display: flex;
@@ -226,7 +227,7 @@ header .cta-link {
 
 .works-section {
     padding: 256px 20px;
-    display: none;
+
 }
 .works-section .projects {
     display: flex;
