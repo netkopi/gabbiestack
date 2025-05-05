@@ -226,7 +226,7 @@ header .cta-link {
 
 .works-section {
     padding: 256px 20px;
-
+    display: none;
 }
 .works-section .projects {
     display: flex;
@@ -285,13 +285,14 @@ header .cta-link {
     position: absolute;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .project-display .project-link {
     text-decoration: none;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: rgba(50, 205, 50, 0.677);
+    background-color: rgba(50 205 50 / 80%);
     color: #fff;
     position: absolute;
     left: 50%;
@@ -300,7 +301,8 @@ header .cta-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: visible;
+    pointer-events: none;
+    z-index: 3;
 }
 
 

@@ -65,10 +65,10 @@ const projectsInfo = [
 ]
 projectsInfo.forEach(project => {
   projectDisplayContainer.innerHTML += `
-    <div class="img-container" style="background-color: ${project.bg};">
+    <a href="https://netkopi.github.io/${project.name}" target="_blank" class="img-container" style="background-color: ${project.bg};">
         <img src="images/${project.img}" alt="">
-        <a href="https://netkopi.github.io/${project.name}" target="_blank" class="project-link">view</a>
-    </div>
+        <span  class="project-link">view</span>
+    </a>
   `
 })
 
